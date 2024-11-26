@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <div class="wrapper-i">
+                <div class="offer">
+                    <h1 class="offer__title">С помощью нас вы сможете создать то, о чем</h1>
+                    <span class="offer__span">Желаете!</span>
+                    <p class="offer__text">
+                        Наши возможности + опыт помогает нам достичь 
+                        огромного успеха. Мы верим в вас! И знаем это на 
+                        100%. Вас не остановить
+                    </p>
+                    <a href="#" class="offer__a">
+                        Узнать больше...
+                    </a>
+                </div>
+                <img class="img" src="img/header-img.png" alt="head_img">
+            </div>
+        </div>
+    </header>
+    <section class="section_up">
+        <div class="container">
+            <h1 class="logo-head">Что Вам необходимо?</h1>
+            <div class="wrapper-logo">
+                <div class="logo-m">
+                    <img src="img/f3.png" alt="pic" class="img-left">
+                    <p><a href="#" class="btn-l">Первый блок</a></p>
+                    <p class="p-grey">
+                        Какой то умный текст, но его очень много,
+                        а я очень не хочу его перепечатывать
+                    </p>
+                </div>
+                <div class="logo-m">
+                    <img src="img/f4.png" alt="pic" class="img-midle">
+                    <p><a href="#" class="btn-l">Второй блок</a></p>
+                    <p class="p-grey">
+                        Какой то умный текст, но его очень много,
+                        а я очень не хочу его перепечатывать
+                    </p>
+                </div>
+                <div class="logo-m">
+                    <img src="img/f5.png" alt="pic" class="img-right">
+                    <p><a href="#" class="btn-l">Третий блок</a></p>
+                    <p class="p-grey">
+                        Какой то умный текст, но его очень много,
+                        а я очень не хочу его перепечатывать
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: bisque;">
+        <div class="container" style="display: flex; flex-direction: column; justify-content: space-between; padding-bottom: 40px;">
+            <h1 style="margin: 20px 0; text-align: center;">Форма мечтаний</h1>
+            <p style="text-align: center;">Выберите немного из своего времени <br> и попробуйте помечать о печеньках</p>
+            <form onsubmit="form()" style="display: flex; width: 400px; margin: 0 auto; flex-direction: column; justify-content: space-between;">
+                <div style="display: flex; justify-content: space-between; width: 400px;">
+                    <label>Количество печенек</label>
+                    <input type="number" id="count" name="count" style="width: 200px; height: 40px; text-align: center;" placeholder="Например 6?" required>
+                </div>
+                <span class="error" id="span0" aria-live="polite" style="margin-bottom: 10px;"></span>
+                <div style="display: flex; justify-content: space-between; width: 400px;">
+                    <label>Имя</label>
+                    <input type="text" id="name_f" style="width: 200px; height: 40px; text-align: center;" maxlength="2" required>
+                </div>
+                <span class="error" id="span1" aria-live="polite" style="margin-bottom: 10px;"></span>
+                <div style="display: flex; justify-content: space-between; width: 400px;">
+                    <label>Цвет печенек</label>
+                    <input placeholder="Choco or White or Broun" type="text" id="color" list="l1" style="width: 200px; height: 40px; text-align: center;" pattern="[Cc]hoco|[Ww]hite|[Bb]roun" required>
+                    <datalist id="l1">
+                        <option value="">Choco</option>
+                        <option value="">White</option>
+                        <option value="">Broun</option>
+                    </datalist>
+                </div>
+                <span class="error" id="span2" aria-live="polite" style="margin-bottom: 10px;"></span>
+                <div style="display: flex; justify-content: space-between; width: 400px;">
+                    <label>Почта</label>
+                    <input type="email" id="teleph" style="width: 200px; height: 40px; text-align: center;" required>
+                </div>
+                <span class="error" id="span3" aria-live="polite" style="margin-bottom: 10px;"></span>
+                <button type="submit">Отправить свое желание</button>
+            </form>
+        </div>
+    </section>
+    <section class="section_down">
+        <div class="container">
+            <h1 class="logo-head2">Форма заказа обратного звонка</h1>
+            <form action="#" method="post" enctype="multipart/form-data" style="text-align: center;">
+                <div class="form-btn">
+                    <input type="text" class="btn-g" placeholder="Имя" required >
+                    <input type="email" class="btn-g" placeholder="Введите свой E-mail" required type="email">
+                    <input type="tel" class="btn-g" placeholder="Телефон" required type="tel" pattern="\d{6}">
+                    <input type="text" class="btn-g" placeholder="Какая тема вас интересует" required maxlength="1">
+                    <button class="btn3">Отправить вопрос!</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="div1">
+            <div class="div-up">
+                <p class="footer-text">© Все на этом сайте защищено </p>
+                </div>
+                <div class="div-down">
+                </div>
+        </div>
+    </footer>
+    <script src="./js/js.js"></script>
+</body>
+</html>
